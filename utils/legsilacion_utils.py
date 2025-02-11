@@ -50,7 +50,7 @@ def ask_to_openai(question):
         )
 
         respuesta = completion.choices[0].message.content
-        logger.info(f"Respuesta obtenida para la consulta: {question}")
+        logger.info(f"Respuesta obtenida para la consulta: {question} es : {respuesta}")
 
         return respuesta
     except Exception as e:
